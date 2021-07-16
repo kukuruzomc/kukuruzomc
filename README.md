@@ -1,12 +1,4 @@
--#qpy:webapp:Hello QPython
-#qpy://127.0.0.1:8080/
-"""
-This is a sample for qpython webapp
-"""
-from bottle import Bottle, ServerAdapter
-from bottle import run, debug, route, error, static_file, template
-
-######### QPYTHON WEB SERVER ###############
+######## QPYTHON WEB SERVER ###############
 class MyWSGIRefServer(ServerAdapter):
     server = None
     def run(self, handler):
